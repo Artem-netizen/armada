@@ -1,0 +1,21 @@
+.brand
+  display: flex
+  flex-direction: column
+  padding: 35px 0
+  &__title
+    @include H2
+    font-family: Open Sans Condensed, sans-serif
+    margin-bottom: 40px
+
+  &__items
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap
+  &__img
+    filter: contrast(0%)
+    &:hover
+      filter: contrast(100%)
+  &__wrapper
+    justify-content: center
+    align-items: center

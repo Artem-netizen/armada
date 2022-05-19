@@ -1,0 +1,51 @@
+.events
+  background: #616167
+  padding: 35px 0
+  display: block
+  &__title
+    @include H2
+    font-weight: bold
+    color: #FFFFFF
+    margin-bottom: 40px
+  &__slider
+    margin-top: 40px
+    margin-bottom: 32px
+  .slider__item
+    margin-right: 9px
+  &__buttons
+    margin-top: 30px
+  .card-event
+    margin: 5px
+  .slick-track
+    display: flex !important
+
+.slider__item_event
+  flex: 0 0 25%
+
+
+.slider__control_events[data-slide='prev']
+  top: -8%
+  left: 89%
+
+.slider__control_events[data-slide='next']
+  top: -8%
+  left: 94%
+
+.events__buttons_block_first
+  display: flex
+  align-items: center
+  @include caption_small_BLD
+  font-family: Open Sans, sans-serif
+  font-weight: bold
+  color: #FFFFFF
+  & > img
+    margin-left: 16px
+.events__buttons_block_next
+  background: #FFFFFF
+  @include caption_small_BLD
+  font-family: Open Sans, sans-serif
+  font-weight: bold
+  margin-left: 24px
+@media (max-width: 999px)
+  .events
+    display: none

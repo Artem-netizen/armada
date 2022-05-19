@@ -1,0 +1,408 @@
+@media (max-width: 746px)
+  .container
+    //width: 320px
+    //margin: 0 auto
+  .pass
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    &__slider
+      display: none
+    &__wrapper
+      width: 100%
+      margin-top: 0
+      grid-template-columns: repeat(2, 50%)
+      grid-auto-rows: minmax(140px, 160px)
+      grid-template-areas:  "b1 b2" "b3 b4" "b5 b6"
+      max-width: none
+      //width: 320px
+    &__warning
+      display: none
+    &__block
+      svg
+        zoom: 0.8
+        //display: none
+      &:hover
+        svg
+          transform: scale(1.2)
+      &_title
+        font-weight: 300
+        font-size: 36px
+      &_subTitle
+        font-style: normal
+        font-weight: 600
+        font-size: 18px
+        line-height: 24px
+      &_1
+        //background: $shop
+      &_2
+        //background: $sale
+      &_3
+        //background: $event
+      &_4
+        //background: $service
+      &_5
+        //background: $food
+      &_6
+        //background: $stock
+
+  .mobile_menu
+    //padding-top: 10px
+    display: flex
+    align-items: center
+    flex-direction: column
+    background: #616167
+    .container
+      max-width: none
+      padding: 0
+      margin: 0
+    &_slider
+      width: 100%
+      overflow: hidden
+      .slider__control
+        display: none
+      //height: 312px
+    &_items
+      display: flex
+      flex-direction: column
+      width: 100%
+      &-content
+        display: flex
+        flex-direction: column
+        align-items: center
+
+
+
+
+      &-info
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+  .mm__info
+    &_block
+      width: calc(50% - 1px)
+      margin: 2px 0
+      display: flex
+      align-items: center
+      padding: 15px 11px
+      background: white
+
+      height: 50px
+
+    &_title
+      @include H8
+      margin-left: 8px
+      color: #616167
+  .mm__content
+    width: 100%
+    &_block
+      padding: 15px 11px
+      display: flex
+      align-items: center
+      width: 100%
+      background: #FDFDFF
+      margin: 2px 0
+      &-bg
+        background: #E2E8F0
+      &-title
+        @include caption_small_BLD
+        color: #131318
+        font-weight: bold
+        margin-left: 8px
+        &-color
+          color: #616167
+
+  .events
+    display: none
+
+  .shoppingMall
+    position: relative
+    padding: 150px 12px 80px 12px
+    flex-direction: column-reverse
+    align-items: flex-start
+    &__block
+      display: flex
+      flex-direction: column
+      height: auto
+      width: 100%
+      //padding-right: 12px
+      //padding-left: 12px
+      &_bg
+        width: 100%
+        //height: 208.26px
+      &_title
+        //@include H5
+        //margin-top: 40px
+        font-size: 32px
+        line-height: 40px
+        position: absolute
+        top: 40px
+      &_description
+        @include paragraph_body_small
+        margin-top: 18px
+
+
+
+  .mobile__cards
+    background: #616167
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 40px 0 80px 0
+    &_block:nth-child(1)
+      margin-bottom: 80px
+    &_button
+      margin: 0 auto
+      width: 290px
+      height: 60px
+      background: #353442
+      border-radius: 2px
+      margin-top: 14px
+      display: flex
+      align-items: center
+      justify-content: center
+      &-map
+        background: #FFFFFF
+        margin-top: 24px
+      &-text
+        @include caption_small_BLD
+        color: #FFFFFF
+        margin-right: 16px
+        font-weight: bold
+        font-family: Open Sans, sans-serif
+        &-map
+          color: #131318
+      &-circle
+        font-family: Open Sans, sans-serif
+        width: 40px
+        height: 40px
+        background: #E31E24
+        display: flex
+        align-items: center
+        justify-content: center
+        @include caption_x_small_BLD
+        color: #FFFFFF
+        border-radius: 100%
+        font-weight: bold
+
+    &_wrapper
+      width: 294px
+      display: flex
+      flex-wrap: wrap
+      margin: 0 auto
+      margin-top: 24px
+    &_block
+      display: flex
+      flex-direction: column
+
+    &_title
+      width: 293px
+      margin: 0 auto
+      @include H5
+      color: #FFFFFF
+  .events__card
+    width: 143px
+    height: 332px
+    margin: 2px
+    &_prev
+      margin: 8px
+      padding: 4px 12px
+    &_img
+      width: 100%
+      height: 143px
+    &_title
+      @include caption_x_small_BLD
+      font-weight: bold
+      margin: 0 8px
+      font-family: Open Sans, sans-serif
+    &_subTitle
+      height: 100%
+      display: flex
+      align-items: flex-end
+      @include caption_x_small
+      font-weight: normal
+      font-family: Open Sans, sans-serif
+
+
+  .brand
+    display: none
+  .mobile__brand
+    display: block
+    padding: 40px 0 40px 0
+    &_title
+
+      @include H2
+      font-size: 32px
+      font-family: Open Sans Condensed, sans-serif
+      font-weight: bold
+      //width: 290px
+      //margin: 0 auto
+      margin-bottom: 30px
+      padding-left: 12px
+      padding-right: 12px
+    &_slider
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-top: 32px
+
+      &_wrapper
+        width: 100%
+      &_item
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        img
+          max-width: 90%
+
+
+
+
+
+
+  .header__drop_wrapper_next-back
+    display: flex
+    align-items: center
+    margin-bottom: 23px
+    &-text
+      @include H6
+      font-family: Open Sans Condensed, sans-serif
+      font-weight: bold
+      color: white
+
+
+  .header__drop_next_content
+    display: flex
+    flex-direction: column
+  .header__drop_next-item
+    @include H8
+    font-family: Open Sans Condensed, sans-serif
+    font-weight: bold
+    color: #131318
+    padding-bottom: 4px
+    border-bottom: 1px solid #CBD5E1
+    margin-bottom: 24px
+    & > span
+      margin-left: 4px
+      color: #616167
+
+
+  .footer
+    padding: 32px 0 14px 0
+    &__wrapper
+      flex-direction: column
+      align-items: center
+    &__logo
+      margin-right: 0
+      //&_text
+       //display: none
+    &__address
+      align-items: center
+      margin-right: 0
+      &_title
+        @include H7
+        margin: 12px 0 24px 0
+      &_tel
+        @include H7
+        margin-bottom: 16px
+      &_job
+        margin: 30px 0 14px 0
+
+    &__line
+      display: none
+    &__links
+      display: none
+    &__buttons
+      display: none
+    &__root
+      text-align: center
+    &__mobile_blocks
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: 44px
+    &__form
+      display: flex
+      align-items: center
+      &_wrapper
+        display: flex
+        flex-direction: column
+        padding: 4px 8px
+        background: white
+        border-radius: 2px
+        width: 203px
+        margin-right: 4px
+      &_news
+        margin-bottom: 4px
+        @include caption_x_small
+        font-family: Open Sans, sans-serif
+        font-style: normal
+        font-weight: normal
+      &_block
+        display: flex
+        align-items: center
+        &_input
+          border: none
+          outline: none
+          margin-right: 12px
+          font-family: Arial, sans-serif
+          font-style: italic
+          font-weight: normal
+          font-size: 14px
+          line-height: 20px
+          color: #B9BFC5
+          width: 155px
+      &_button
+        padding: 14px 31px
+        border-radius: 2px
+        background: #E30D13
+        @include caption_small_BLD
+        font-family: Open Sans, sans-serif
+        font-weight: bold
+        color: white
+    &__mobile_tabs
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: 40px
+    &__mobile_links
+      margin-top: 8px
+      display: flex
+      flex-direction: column
+      align-items: center
+
+  .tab_block
+    @include buttonFoodHoverFillSvg
+    padding: 6px
+    display: flex
+    align-items: center
+    background: #FDFDFF
+    box-shadow: 0 1px 4px rgba(71, 85, 105, 0.16)
+    border-radius: 2px
+    margin-bottom: 12px
+    width: 100%
+    color: #616167
+    &_text
+      @include H8
+      font-family: Open Sans Condensed, sans-serif
+      font-weight: bold
+      margin-left: 8px
+    &:focus
+      background: #E30D13
+      color: white
+      & > img
+        filter: brightness(0) invert(1)
+  .mobile__links_item
+    @include linkHover
+    margin-bottom: 12px
+    @include H7
+    font-family: Open Sans Condensed, sans-serif
+    font-weight: bold
+    color: #F1F5F9
+  .generalIssues
+    display: flex
+    flex-direction: column
+    align-items: center

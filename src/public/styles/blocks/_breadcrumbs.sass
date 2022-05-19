@@ -1,0 +1,26 @@
+.breadcrumbs
+  display: none
+  list-style: none
+  //display: flex
+  padding-left: 0
+  margin-bottom: 34px
+  flex-wrap: wrap
+  &__li
+    display: flex
+    align-items: center
+    &:first-of-type
+      a
+        text-decoration: underline
+    &:after
+      content: '/'
+      display: block
+      margin-right: 5px
+      line-height: 100%
+      color: $accent-green_day_5
+  &__link
+    color: $accent_green_day_5
+    @include caption_medium
+    margin-right: 5px
+    &:hover
+      color: $Wght
+

@@ -1,0 +1,178 @@
+.modalDefault
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 1000
+  display: flex
+  justify-content: center
+  overflow-y: scroll
+  padding-right: 12px
+  padding-left: 12px
+  img
+    max-height: 558px
+    width: 100%
+    object-fit: contain
+    object-position: left
+    //display: none
+
+  &__mobile-bar
+    display: none !important
+  &__button
+    position: absolute
+
+    bottom: 26px
+    right: 16px
+  &__map
+    right: 17px
+  &__container
+    padding: 30px 17px 60px
+    a
+      text-decoration: underline !important
+      display: block
+      margin-bottom: 5px
+
+  &__img
+    position: relative
+    height: 200px
+    &--mobile
+      display: none
+    //margin-bottom: 30px
+  &__overlay
+    position: inherit
+    height: 100%
+    width: 100%
+    background-color: black
+    opacity: 0
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 880
+    transition: all .15s ease-in
+  &__content
+    border-radius: 2px
+    //margin: 3vh auto 6vh auto
+    margin: auto
+    height: max-content
+    //overflow-y: scroll
+    transform: translateY(-20px)
+    z-index: 889
+    position: relative
+    opacity: 0
+    width: 100%
+    max-width: 700px
+    //margin: 20px auto
+    background: $Wght
+    transition: all .15s ease-out
+    p
+      font-size: 14px
+      margin-bottom: 32px
+  &__additional-wrapper
+    overflow: hidden auto
+    height: 662px
+    &::-webkit-scrollbar-track
+      background-color: #F5F5F5
+    &::-webkit-scrollbar
+      width: 6px
+      background-color: red
+    &::-webkit-scrollbar-thumb
+      background-color: $sale
+      border-radius: 3px
+  &.open
+    .modalDefault__overlay
+      opacity: .7
+      transition: all .10s ease-in
+    .modalDefault__content
+      transform: translateY(0)
+      opacity: 1
+      transition: all .15s ease-in
+
+  &__close
+    background-color: $Wght
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 28px
+    width: 52px
+    height: 32px
+    cursor: pointer
+    position: absolute
+    top: 20px
+    right: 20px
+    svg
+      pointer-events: none
+  &--events
+    .modalDefault__additional-wrapper
+      display: flex
+      height: auto
+      max-height: 334px
+    .modalDefault__img--custom
+      min-width: 180px
+      height: 180px
+      margin-top: 30px
+      margin-left: 30px
+@media (max-width: 1024px)
+  .modalDefault
+    padding: 0
+    &__mobile-bar
+      display: flex !important
+      //svg
+      //  transform: rotate(-90deg)
+    &__content
+      max-width: none
+      margin: 0
+      transform: translateY(100vh)
+      opacity: 0.8
+      min-height: 100vh
+      overflow-y: auto
+      //transition: all .3s ease-in
+      //-webkit-transition: all 2s cubic-bezier(0.51, 0.74, 0, 0.84)
+      //transition: all .2s cubic-bezier(0.51, 0.74, 0, 0.84)
+
+    &.open
+      .modalDefault__content
+        transform: translateY(0)
+        //transition: all .35s ease-out
+        //-webkit-transition: all .5s cubic-bezier(0.71, 0.5, 0.12, 0.71)
+        //transition: all .3s
+        transition: all .5s cubic-bezier(0.71, 0.5, 0.12, 0.71)
+    &__additional-wrapper
+      height: auto
+      //overflow-y: auto
+      display: block !important
+      max-height: none !important
+
+    &__close
+      display: none
+    &__button
+      display: none !important
+    &__link
+      display: block
+      width: 100%
+      text-align: right
+    &--events
+      margin: 15vh auto auto auto
+      .modalDefault__img--custom
+        margin-top: 0
+        margin-left: 0
+@media (max-width: 415px)
+  .modalDefault
+    &__img
+      display: none
+      &--mobile
+        display: block
+    .modalDefault--events
+      .modalDefault__img--mobile
+        height: 320px
+
+
+    //&:before
+    //
+    //  content: ''
+    //  display: block
+    //
+    //  background-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M23.3337 23.3334L4.66699 4.66675M23.3337 4.66675L4.66699 23.3334' stroke='%23545467' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E")
+    //  height: 28px
+    //  width: 28px

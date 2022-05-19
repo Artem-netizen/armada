@@ -1,0 +1,85 @@
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Open Sans Condensed';
+@import "http://fonts.fontstorage.com/import/osanscondensed.css";
+
+// style 
+@import './block/fullpage';
+@import './block/interactive-map';
+@import './block/application';
+@import './block/advantages';
+@import './block/contact';
+@import './block/analytics';
+@import './media/responsive';
+
+// глобальные стили
+body {
+    padding-top: 113px;
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 100vh;
+    font-weight: normal;
+    background: #FDFDFF;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1250px;
+    width: 100%;
+}
+
+.subtitle {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 56px;
+    font-family: 'Open Sans Condensed';
+}
+
+.link {
+    padding: 20px 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #353442;
+    text-align: center;
+    border-radius: 2px;
+    line-height: 16px;
+    font-weight: 700;
+    transition: .3s;
+    font-size: 14px;
+    color: #FFFFFF !important;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    img{
+        margin-left: 16px;
+        width: 20px;
+    }
+    &:hover {
+        background: #E30D13;
+    }
+    &:active {
+        background: #000;
+    }
+}
+
+.card-event__img {
+    height: 100%;
+}
+
+.template-list--change-structure .template-list__title {
+    margin-bottom: 85px;
+    text-align: center;
+    font-family: 'Open Sans Condensed';
+}
+
+.template-list--map .template-list__title {
+    text-align: center;
+    font-family: 'Open Sans Condensed';
+}

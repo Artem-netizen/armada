@@ -1,0 +1,42 @@
+.analytics {
+    padding-top: 105px;
+    padding-bottom: 115px;
+    &__title {
+        margin-bottom: 44px;
+        font-family: 'Open Sans Condensed';
+        font-size: 42px;
+        font-weight: 700;
+        color: #353442;
+        line-height: 56px;
+    }
+    &__inner-text {
+        margin-bottom: 37px;
+        gap: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        p {
+            flex: 1 0 400px;
+            font-size: 18px;
+            font-weight: 400;
+            color: #000000;
+            line-height: 24px;
+            &:first-child {
+                max-width: 542px;
+            }
+            &:last-child {
+                max-width: 586px;
+            }
+        }
+    }
+    &-img {
+        width: 100%;
+        font-size: 0;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

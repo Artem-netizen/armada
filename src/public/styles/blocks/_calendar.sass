@@ -1,0 +1,27 @@
+.calendar
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 321px
+  &__items
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 4px
+  &__items.active
+    background: red
+  &__item-title
+    @include H8
+    color: $Wght
+  &__item
+    @include caption_x_small
+    color: $Wght
+    &:nth-child(2)
+      margin: 2px 0
+  &--inverse
+    .calendar__item
+      color: $base_day_black_4
+    .calendar__items.active
+      .calendar__item
+        color: $Wght
+

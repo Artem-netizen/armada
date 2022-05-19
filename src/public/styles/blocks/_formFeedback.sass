@@ -1,0 +1,31 @@
+.formFeedback
+  max-width: 584px
+  &__container
+    padding: 64px 102px
+    display: flex
+    flex-direction: column
+  &__title
+    @include H6
+    margin-bottom: 16px
+    text-align: center
+  &__input-form
+    margin-bottom: 8px
+    &:last-of-type
+      margin-bottom: 24px
+  &__policy
+    display: flex
+    margin-bottom: 38px
+    a
+      @include caption_small
+      color: $base_day_black_1
+  &__button
+    background: $sale
+    color: $Wght
+    border: none
+    outline: none
+    border-radius: 2px
+
+@media (max-width: 550px)
+  .formFeedback
+    &__container
+      padding: 48px 35px

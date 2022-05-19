@@ -1,0 +1,41 @@
+.modalContentShops
+  &__collapse-category
+    margin-bottom: 24px
+  .collapse-category__item
+    margin-bottom: 0
+  .collapse-category__item:first-of-type
+    margin-top: 0
+  .collapse-category__title
+    @include H4
+  .collapse-category__desc
+    @include caption_x_small
+  &__wrapper-floor
+    display: flex
+    justify-content: space-between
+    margin-bottom: 32px
+  &__calendar
+    margin-bottom: 32px
+  &__modal-tags
+    max-width: 65%
+    margin-bottom: 20px
+  &__description
+    @include paragraph_body_small
+  &__section-mobile
+    &:not(:last-of-type)
+      margin-bottom: 40px
+    .section-mobile__title
+      color: $base_day_black_1
+      margin-left: 5%
+    .section-mobile__card
+      flex-basis: calc(33.333% - 5px)
+    .section-mobile__card:not(:first-of-type)
+      margin-left: 7px
+@media (max-width: 999px)
+  .modalContentShops
+    &__section-mobile
+      .section-mobile__card
+        min-width: 130px
+      //.section-mobile__card:not(:first-of-type)
+      //  margin-left: 0
+      .section-mobile__card:nth-of-type(2n)
+        margin-left: 7px

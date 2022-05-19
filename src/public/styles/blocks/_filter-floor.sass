@@ -1,0 +1,31 @@
+.filter-floor
+  height: 232px
+  width: 268px
+  background: #616167
+  opacity: 0.96
+  position: relative
+  z-index: 999
+  border-radius: 2px
+  box-shadow: 0px 1px 4px rgba(71, 85, 105, 0.16)
+  padding: 25px
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__button
+    &:not(:last-of-type)
+      margin-bottom: 12px
+  &__filter-events
+    height: max-content
+    display: flex
+    flex-direction: column
+    align-items: start
+
+@media (max-width: 999px)
+  .filter-floor
+    z-index: 998
+    width: max-content !important
+    &__filter-events
+      display: none
+    &__wrapper
+      justify-content: flex-end

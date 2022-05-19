@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box; }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1212px; } }
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 22px 24px;
+  background: #353442;
+  border-radius: 2px; }
+
+.mobile__cards {
+  display: none; }
+
+.mobile__brand {
+  display: none; }
+
+.header__mobile {
+  display: none; }
+
+.header__drop {
+  display: none; }
+
+.generalIssues {
+  display: none; }
+
+.footer__mobile_blocks {
+  display: none; }
+
+.title {
+  margin-bottom: 35px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #FFFFFF; }
+
+.modal-open {
+  padding-right: 17px; }
+
+body {
+  padding-top: 113px; }
+
+.slick-initialized .slick-slide {
+  display: flex; }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield; }
+
+@media (max-width: 1199px) {
+  .modal-open {
+    padding-right: 0; }
+
+  body {
+    padding-top: 92px; }
+
+  .title {
+    font-size: 32px; } }
+
+/*# sourceMappingURL=base.css.map */

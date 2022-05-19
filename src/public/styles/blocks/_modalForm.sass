@@ -1,0 +1,86 @@
+.modalForm
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 1000
+  display: flex
+  justify-content: center
+  overflow-y: scroll
+  padding-right: 12px
+  padding-left: 12px
+  &__container
+    padding: 64px 102px
+
+  &__overlay
+    position: inherit
+    height: 100%
+    width: 100%
+    background-color: black
+    opacity: 0
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 880
+    transition: all .15s ease-in
+  &__content
+    border-radius: 2px
+    margin: 3vh auto 6vh auto
+    height: max-content
+    transform: translateY(-20px)
+    z-index: 889
+    position: relative
+    opacity: 0
+    width: 100%
+    max-width: 950px
+    //min-width: 600px
+    //min-height: 500px
+    //margin: 20px auto
+    background: $Wght
+    transition: all .15s ease-out
+  &.open
+    .modalForm__overlay
+      opacity: .7
+      transition: all .10s ease-in
+    .modalForm__content
+      transform: translateY(0)
+      opacity: 1
+      transition: all .15s ease-in
+
+  &__close
+    background-color: $Wght
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 28px
+    width: 52px
+    height: 32px
+    cursor: pointer
+    position: absolute
+    top: 20px
+    right: 20px
+    svg
+      pointer-events: none
+@media (max-width: 1024px)
+  .modalForm
+    width: 100%
+    padding: 0
+    &__content
+      //height: 100%
+      max-width: none
+      margin: 0
+      transform: translateX(-100vw)
+      opacity: 0.8
+      //transition: all .3s ease-in
+      //-webkit-transition: all 2s cubic-bezier(0.51, 0.74, 0, 0.84)
+      //transition: all 2s cubic-bezier(0.51, 0.74, 0, 0.84)
+    &.open
+      .modalForm__content
+        transform: translateX(0)
+        //transition: all .35s ease-out
+        -webkit-transition: all .5s cubic-bezier(0.71, 0.5, 0.12, 0.71)
+        transition: all .5s cubic-bezier(0.71, 0.5, 0.12, 0.71)
+    &__close
+      //display: none

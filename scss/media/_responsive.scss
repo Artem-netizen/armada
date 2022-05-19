@@ -1,0 +1,80 @@
+@media (max-width: 1250px) {
+    .fullpage__inner h1 {
+        font-size: 45px;
+        line-height: 105%;
+    }
+    .fullpage__inner p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .interactive-map__wrapper {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .interactive-map__desc {
+        max-width: none;
+        width: auto;
+    }
+    .interactive-map__img {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .template-list--change-structure .template-list__title {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .fullpage__inner h1 {
+        font-size: 30px;
+        line-height: 105%;
+    }
+    .fullpage__inner p {
+        font-size: 16px;
+        &:first-child {
+            margin: 0 auto 40px;
+        }
+        &:last-child {
+            margin: 40px auto 0;
+        }
+    }
+    .map {
+        height: 70vh !important;
+    }
+    .advantages__wrapper {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 570px) {
+    .fullpage {
+        min-height: 75vh;
+    }
+    .fullpage__inner p {
+        font-size: 14px;
+    }
+    .interactive-map__title,
+    .section-mobile__title,
+    .analytics__title,
+    .contact__title {
+        font-size: 33px;
+        line-height: 43px;
+    }
+    .advantages__item ul li p,
+    .analytics__inner-text p,
+    .interactive-map__desc p,
+    .application-desc p {
+        font-size: 14px;
+    }
+    .analytics__inner-text p {
+        flex: 1 0 100%;
+        &:first-child,
+        &:last-child {
+            max-width: none;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.mobile-bar
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding-right: 17px
+  padding-top: 5px
+  padding-bottom: 5px
+  @include Hover
+  //margin-bottom: 3px
+  &__return
+    display: flex
+    align-items: center
+    cursor: pointer
+    svg
+      pointer-events: none
+      margin-right: 5px
+    span
+      pointer-events: none
+  &__title
+    @include H6
+    color: $food
+  &__buttons
+    display: flex
+    align-items: center
+  &__button
+    &:first-child
+      margin-right: 10px

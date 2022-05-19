@@ -1,0 +1,40 @@
+.mapTooltip
+  padding: 16px
+  position: relative
+  background: $dush
+  border: none
+  z-index: 2
+  border-radius: 12px
+  @include caption_small_BLD
+  color: $base_day_black_1
+  &:before
+    position: absolute
+    z-index: 1
+    width: 0
+    height: 0
+    border: 0 solid transparent
+    border-top-width: 15px
+    border-bottom-width: 15px
+    border-right: 14px solid $dush
+    border-radius: 10px
+    top: 14px
+    //left: -1px
+  &--services
+    background: $accent_red_day_2
+    &:before
+      border-right: 14px solid $accent_red_day_2
+  &--food
+    background: $accent_green_day_3
+    &:before
+      border-right: 14px solid $accent_green_day_3
+  &--shop
+    background: $dush
+    &:before
+      border-right: 14px solid $dush
+.map
+  height: 100vh !important
+@media (max-width: 999px)
+  .map
+    height: 100vh !important
+  .leaflet-control-container
+    display: none

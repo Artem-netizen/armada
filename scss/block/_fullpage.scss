@@ -1,0 +1,45 @@
+.fullpage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('/img/fullpage/bg.jpg');
+    &__inner{
+        text-align: center;
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 140%;
+            color: #FFFFFF;
+            &:first-child {
+                margin: 0 auto 80px;
+                max-width: 1000px;
+            }
+            &:last-child {
+                margin: 80px auto 0;
+                max-width: 850px;
+            }
+        }
+        h1 {
+            font-size: 74px;
+            font-weight: 700;
+            line-height: 140%;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.discuss-link {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 250px;
+    &:hover {
+        background: #919191 !important;
+    }
+}

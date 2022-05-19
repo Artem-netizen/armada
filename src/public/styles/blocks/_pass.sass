@@ -1,0 +1,129 @@
+.mobile_menu
+  display: none
+.pass
+  background: #616167
+  &__slider
+    grid-area: sl
+    overflow: hidden
+    .slider
+      position: relative
+      .slick-arrow
+        position: absolute
+        top: 45%
+        //transform: translateY(-50%)
+        z-index: 99
+      .slick-prev
+        left: 2%
+      .slick-next
+        right: 2%
+      &__control
+        display: none
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        cursor: pointer
+        &--prev
+          left: 2%
+        &--next
+          right: 2%
+    &_img
+      width: 100%
+
+      //object-fit: none
+  &__wrapper-block
+    position: relative
+    z-index: 1
+  &__warning
+    grid-area: wa
+    background: #3734A9
+    padding: 44px 64px
+    &_block
+      display: flex
+      //justify-content: space-between
+      align-items: center
+      &_text
+        font-family: Open Sans, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 28px
+        line-height: 36px
+        color: #A09DF8
+        margin-left: 21px
+  &__block
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    overflow: hidden
+    position: relative
+    svg
+      position: absolute
+      z-index: 0
+      transform: scale(1)
+      transition: all .7s
+    &:hover
+      svg
+        transform: scale(1.15)
+        transition: all .7s
+    &_title
+      font-family: Open Sans Condensed, sans-serif
+      font-weight: 100
+      font-size: 56px
+      color: #FFFFFF
+
+    &_subTitle
+      font-family: Open Sans, sans-serif
+      font-style: normal
+      font-weight: 600
+      font-size: 24px
+      line-height: 32px
+      color: #FFFFFF
+
+
+
+
+  &__block_1
+    grid-area: b1
+    background: #017AFF
+    svg
+      bottom: 0
+      right: 0
+
+  &__block_2
+    grid-area: b2
+    background:  radial-gradient(50% 50% at 50% 50%, #B70D21 0%, #E31E24 100%)
+    svg
+      top: 15px
+
+  &__block_3
+    grid-area: b3
+    background: radial-gradient(50% 50% at 50% 50%, #A0CEF9 0%, #22B0CF 100%)
+    svg
+      top: 1px
+  &__block_4
+    grid-area: b4
+    background: radial-gradient(50% 50% at 50% 50%, #F3A204 0%, #F96300 100%)
+    svg
+      top: 15px
+      right: 7px
+  &__block_5
+    grid-area: b5
+    background: radial-gradient(50% 50% at 50% 50%, #34DE89 0%, #06B4A1 100%)
+    svg
+      top: 45px
+      left: 25px
+  &__block_6
+    grid-area: b6
+    background: radial-gradient(50% 50% at 50% 50%, #3503C3 0%, #6B67EA 100%)
+    svg
+      right: -3px
+      top: -75px
+  &__wrapper
+    //margin-top: 172px
+    padding: 40px 0
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
+    grid-auto-rows: minmax(208px, 208px)
+    grid-template-areas:  "sl sl sl b1 b2" "sl sl sl b3 b4" "wa wa wa b5 b6"
+    width: 100%
+    height: auto

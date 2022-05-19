@@ -1,0 +1,36 @@
+.filter-sidebar
+  position: sticky
+  top: 113px
+  background-color: $gray_blue_gray_5
+  //padding: 16px
+  width: 290px
+  max-height: 840px
+  height: 100%
+  &__search
+    //padding: 10px
+    //border: 1px solid $accent_blue
+    margin-bottom: 4px
+  &__buttons-filter
+    margin-bottom: 24px
+  &__header
+    padding-left: 16px
+    padding-right: 16px
+    padding-top: 16px
+  &__list
+    padding-right: 16px
+    padding-left: 16px
+    max-height: 500px
+    min-height: 336px
+    overflow: auto
+  &__total
+    @include H4
+    color: $base_day_black_1
+    margin-bottom: 20px
+  &__total-title
+    color: $base_day_black_4
+
+
+@media (max-width: 999px)
+  .filter-sidebar
+    position: static
+    width: 100%

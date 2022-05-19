@@ -1,0 +1,18 @@
+.search-filter
+  padding: 4px 8px
+  @include Hover
+  border-radius: 2px
+  &__title
+    @include caption_x_small
+    color: $base_day_black_1
+    margin-bottom: 4px
+  &__wrapper
+    display: flex
+    justify-content: space-between
+  &__input
+    width: 100%
+    border: none
+    outline: none
+    &::placeholder
+      @include caption_small
+      color: $gray_blue_gray_1

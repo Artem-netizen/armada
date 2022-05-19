@@ -1,0 +1,113 @@
+.card-event
+  display: flex
+  flex-direction: column
+  align-items: start
+  width: 290px
+  border-radius: 2px
+  background: #FFFFFF
+  height: auto
+  max-height: initial
+  cursor: pointer
+  //flex-grow: 1
+  //margin: 5px
+  &__wrapper
+    display: flex
+    flex-direction: column
+    padding: 16px 12px 12px
+    align-items: start
+    height: 100%
+    width: 100%
+    pointer-events: none
+  &__img
+    width: 100%
+    pointer-events: none
+    &--item
+      width: 100%
+      height: 100%
+      max-height: 280px
+  &__title
+    //margin: 0 16px 12px 16px
+    margin-bottom: 12px
+    font-family: Open Sans, sans-serif
+    @include caption_medium_BLD
+    font-weight: bold
+    color: #353442
+    //height: 40px
+    text-transform: uppercase
+  &__description
+    //margin: 0 16px 14px 16px
+    margin-bottom: 14px
+    @include caption_small
+    font-family: Open Sans, sans-serif
+    font-style: normal
+
+    //height: 60px
+  &__type-event
+    margin-bottom: 16px
+    //@include caption_small_BLD
+    //font-family: Open Sans, sans-serif
+    //font-weight: bold
+    //padding: 0 12px
+    //display: flex
+    //align-items: center
+    //border-radius: 2px
+    //color: #FFFFFF
+    //height: 24px
+    ////max-width: 108px
+    //svg
+    //  min-width: 14px
+    //&--star
+    //  background: #22B0CF
+    //&--present
+    //  background: #6B67EA
+    //&--sale
+    //  background: #E30D13
+    //&--desc
+    //  margin-left: 7px
+  &__subtitle
+    //margin: auto 16px 12px 16px
+    margin-top: auto
+    color: #6B67EA
+    @include caption_small
+    font-family: Open Sans, sans-serif
+    display: flex
+    align-items: center
+    span
+      margin-left: 16px
+    a
+      pointer-events: all
+
+.regular
+  padding: 0
+.regular > .slick-prev
+  left: 89%
+  top: -13%
+
+.regular > .slick-next
+  top: -13%
+  right: 2%
+
+.single-item
+  padding: 0
+.single-item > .slick-prev
+  left: 0
+  z-index: 100
+.single-item > .slick-next
+  right: 30px
+
+@media (max-width: 746px)
+  .card-event
+    //max-width: 143px
+    width: 100%
+    &__title
+      @include caption_x_small_BLD
+      margin-bottom: 30px
+    &__description
+      display: none
+    &__subtitle
+      @include caption_x_small
+    &__prev
+      &--desc
+
+
+

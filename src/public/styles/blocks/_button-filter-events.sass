@@ -1,0 +1,21 @@
+.button-filter-events
+  cursor: pointer
+  max-width: 130px
+  width: 100%
+  padding: 4px 8px
+  border-radius: 4px
+  min-width: 118px
+  span
+    @include H8
+    color: $Wght
+  input
+    height: 0
+    width: 0
+    position: absolute
+  &:hover
+    background: #353442
+.button-filter-events.active
+  background: #353442
+
+.button-filter-events > *
+  pointer-events: none

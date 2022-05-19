@@ -1,0 +1,63 @@
+@mixin Hover
+  //background: #C4C4C4
+  box-shadow: 0 1px 4px rgba(71, 85, 105, 0.16)
+
+@mixin linkHover
+  transition: all .2s
+  &:hover
+    color: $sale
+    transition: all .2s
+
+@mixin buttonFoodHover
+  transition: all .2s
+  svg
+    path
+      transition: all .2s
+  &:hover
+    background: $accent_red_day_1
+    color: $Wght
+    svg
+      path
+        //fill: $Wght
+        stroke: $Wght
+        transition: all .2s
+  &:active
+    background: $base_day_black_1
+    color: $Wght
+    svg
+      path
+        //fill: $Wght
+        stroke: $Wght
+@mixin buttonFoodHoverFillSvg
+  transition: all .2s
+  svg
+    path
+      transition: all .2s
+  &:hover
+    background: $accent_red_day_1
+    color: $Wght
+    svg
+      path
+        fill: $Wght
+        //stroke: $Wght
+        transition: all .2s
+  &:active
+    background: $base_day_black_1
+    color: $Wght
+    svg
+      path
+        fill: $Wght
+        //transition: all .2s
+//@mixin buttonActive
+//  transition: all .2s
+//  svg
+//    path
+//      transition: all .2s
+//  &:hover
+//    background: $base_day_black_1
+//    color: $Wght
+//    svg
+//      path
+//        //fill: $Wght
+//        stroke: $Wght
+//        transition: all .2s

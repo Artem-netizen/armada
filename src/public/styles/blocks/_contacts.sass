@@ -1,0 +1,31 @@
+.contacts
+  background: $base_day_black_4
+  padding-top: 20px
+  &__content
+    display: flex
+    background: $gray_slate_1
+    justify-content: space-between
+    margin-bottom: 20px
+  &__info-contacts
+    height: max-content
+    padding-top: 30px
+    margin-right: auto
+    margin-left: auto
+
+  &__formFeedback
+    justify-self: self-end
+    width: 100%
+    background: $Wght
+    max-width: 50%
+  &__map
+    width: 100%
+    height: 650px
+@media (max-width: 1199px)
+  .contacts
+    &__content
+      flex-direction: column
+    &__formFeedback
+      width: 100%
+      max-width: none
+    &__info-contacts
+      margin-bottom: 40px

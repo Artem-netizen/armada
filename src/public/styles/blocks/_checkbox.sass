@@ -1,0 +1,18 @@
+.checkbox
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-right: 8px
+  &__label
+    width: 16px
+    height: 16px
+    border-radius: 50%
+    border: 1px solid $gray_slate_1
+  &__input
+    visibility: hidden
+    height: 0
+    width: 0
+    position: absolute
+
+  &__input:checked + .checkbox__label
+    border: 5px solid $sale

@@ -1,0 +1,28 @@
+.shoppingMall
+  padding: 30px 0 50px 0
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__block
+    width: 596px
+    height: 428px
+    &_title
+      @include H2
+      margin-bottom: 40px
+      font-size: 36px
+    &_description
+      @include paragraph_body_large
+      margin-bottom: 32px
+  &__button_title
+    @include caption_small_BLD
+    margin-right: 16px
+    color: #FFFFFF
+    font-weight: bold
+  &__button
+    display: flex
+    align-items: center
+@media (max-width: 1099px)
+  .shoppingMall
+    flex-direction: column-reverse !important
+    &__block_bg
+      margin-bottom: 10px

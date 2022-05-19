@@ -1,0 +1,39 @@
+.input-form
+  padding: 4px 16px 12px
+  display: flex
+  flex-direction: column
+  background-color: $gray_blue_gray_3
+  &__title
+    margin-bottom: 4px
+    color: #0B1F35
+    @include caption_x_small
+  &__item
+    background-color: $gray_blue_gray_3
+    border: none
+    outline: none
+    &::placeholder
+      @include caption_small_link
+      font-size: 16px
+      color: $gray_slate_1
+  &--files
+    display: none
+    border: 1px dashed $gray_blue_gray_1
+    padding-top: 24px
+    padding-bottom: 44px
+    align-items: center
+    position: relative
+    cursor: pointer
+    &:hover
+
+      svg
+        circle
+          transition: all .4s
+          fill: $gray_blue_gray_2
+    .input-form__item
+      visibility: hidden
+      width: 0
+      height: 0
+      position: absolute
+    .input-form__title
+      max-width: 145px
+      text-align: center

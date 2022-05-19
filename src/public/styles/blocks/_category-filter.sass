@@ -1,0 +1,35 @@
+.category-filter
+  width: 100%
+  margin-bottom: 24px
+  &__input
+    position: absolute
+    height: 0
+    width: 0
+    visibility: hidden
+  &__close
+    cursor: pointer
+    margin-left: 4px
+    opacity: 1
+  &__label
+    border-bottom: 1px solid $gray_blue_gray_1
+    padding-bottom: 4px
+    width: 100%
+    cursor: pointer
+  &__title
+    @include H8
+    color: $accent_red_day_1
+  &__counter
+    @include H8
+    color: $accent_red_day_1
+
+
+
+
+
+.collapsed.category-filter__label
+  .category-filter__title
+    color: $base_day_black_1
+  .category-filter__counter
+    color: $base_day_black_1
+  .category-filter__close
+    opacity: 0

@@ -1,0 +1,52 @@
+.search-result
+  position: absolute
+  align-self: flex-start
+  width: 290px
+  padding-top: 15px
+  padding-bottom: 60px
+  height: 840px
+  z-index: 999
+  border-radius: 4px
+  background-color: $gray_blue_gray_5
+  &__list
+    max-height: 560px
+    overflow: auto
+  &__item-floor
+    padding-left: 16px
+    height: 36px
+    @include H8
+    color: $base_day_black_1
+    display: flex
+    align-items: center
+    background-color: $gray_blue_gray_2
+    margin-right: 14px
+    margin-bottom: 12px
+    span
+      margin-right: 3px
+  &__wrapper-block
+    padding-left: 16px
+    margin-bottom: 32px
+  &__title
+    @include H4
+    color: $base_day_black_1
+    margin-bottom: 12px
+    margin-left: 15px
+  &__collapse-category
+    margin-right: 22px
+  &__item
+    margin-right: 22px
+    margin-left: 22px
+    &:last-of-type
+      margin-bottom: 32px
+  &__empty
+    @include H4
+    color: $base_day_black_1
+    text-align: center
+    display: block
+    margin-top: 25px
+
+
+@media (max-width: 1399px)
+  .search-result
+    &__list
+      max-height: 470px

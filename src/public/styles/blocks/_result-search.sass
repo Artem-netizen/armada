@@ -1,0 +1,24 @@
+.result-search
+  background: $Wght
+  width: 100%
+  min-height: 50vh
+  padding: 24px 76px 50px 45px
+  &__wrapper-title
+    margin-bottom: 24px
+    @include H4
+    color: $base_day_black_1
+    display: flex
+    align-items: center
+    svg
+      margin-right: 8px
+  &__collapse-category
+    div
+      pointer-events: none
+    .collapse-category__wrapper
+      flex-basis: 45%
+@media (max-width: 576px)
+  .result-search
+    padding: 24px 39px 49px 25px
+    &__collapse-category
+      .collapse-category__wrapper
+        flex-basis: 62%

@@ -1,0 +1,100 @@
+.footer
+  background: #58545C
+  padding: 56px 0 32px 0
+  //margin-top: 123px
+  display: flex
+  flex-direction: column
+  align-items: center
+  &__wrapper
+    display: flex
+  &__logo
+    display: flex
+    flex-direction: column
+    margin-right: 24px
+    &_text
+      @include H5
+      font-family: Open Sans Condensed, sans-serif
+      margin-top: 44px
+      text-align: center
+      color: #FFFFFF
+
+  &__address
+    display: flex
+    flex-direction: column
+    margin-right: 70px
+    &_title
+      @include H6
+      font-family: Open Sans Condensed, sans-serif
+      color: #FFFFFF
+      margin: 15px 0 12px 0
+    &_tel
+      @include H6
+      font-family: Open Sans Condensed, sans-serif
+      color: #FFFFFF
+      @include linkHover
+    &_job
+      @include H6
+      font-family: Open Sans Condensed, sans-serif
+      color: #FFFFFF
+      margin: 47px 0 12px 0
+  &__calendar
+
+    &_items
+
+      &-active
+
+    &_item
+
+  &__line
+    margin-right: 65px
+    height: 228px
+    border: 1px solid #F7FBFF
+    margin-top: 18px
+  &__links
+    margin-top: 50px
+    display: flex
+    flex-direction: column
+    margin-right: 30px
+    width: 175px
+    &_item
+      @include H7
+      font-family: Open Sans Condensed, sans-serif
+      font-weight: bold
+      margin-bottom: 12px
+      color: #FFFFFF
+      @include linkHover
+  &__buttons
+    margin-top: 50px
+    display: flex
+    flex-direction: column
+    &_item
+      &:nth-child(2)
+        margin: 16px 0
+    &_block
+      display: flex
+      align-items: center
+      margin-top: 37px
+      justify-content: space-between
+      width: 176px
+
+  &__root
+    margin-top: 47px
+    @include caption_x_small_BLD_link
+    color: #F1F5F9
+    font-family: Open Sans, sans-serif
+    font-weight: bold
+    a
+      @include linkHover
+  &__root-img
+    display: flex
+    //margin-bottom: 7px
+    img
+      margin: auto
+      filter: invert(1)
+      transform: scale(0.75)
+@media (max-width: 999px)
+  .footer
+    &__logo_text
+      margin-top: 18px
+
+

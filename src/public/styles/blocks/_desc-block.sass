@@ -1,0 +1,39 @@
+.desc-block
+  display: flex
+  margin-bottom: 50px
+  &__img
+    max-width: 600px
+    height: max-content
+  &__title
+    @include H2
+    color: $food
+    margin-bottom: 40px
+  &__text
+    @include paragraph_body_large
+    margin-bottom: 30px
+  &__wrapper
+    margin-right: 16px
+  &__button-more
+    justify-content: flex-start
+    width: max-content
+
+@media (max-width: 1199px)
+  .desc-block
+    margin-bottom: 100px
+    flex-direction: column-reverse
+    //align-items: center
+    &__img
+      margin-bottom: 50px
+    &__title
+      pointer-events: auto
+      //text-align: center
+
+@media (max-width: 767px)
+  .desc-block
+    &__title
+      //@include H5
+      font-size: 32px
+      line-height: 40px
+    &__text
+      font-size: 16px
+      line-height: 22px

@@ -1,0 +1,194 @@
+.template-list
+  padding-top: 50px
+  background-color: $base_day_black_4
+  padding-bottom: 120px
+  &__wrapper
+    display: flex
+  &__content-wrapper
+    display: flex
+    flex-wrap: wrap
+  &__card
+    flex-basis: calc(33.333% - 6px)
+    margin-bottom: 10px
+    //&:last-of-type
+    //  margin-right: auto
+    &:not(:nth-of-type(3n))
+      margin-right: 9px
+  &__content
+    width: 100%
+  &__sidebar
+    margin-right: 10px
+    min-width: 290px
+  &__pagination
+    margin-top: 20px
+  &__mobile-content
+    display: none
+  //&__title
+  //  display: block
+  &--gallery
+
+    .template-list__title
+      display: flex
+      align-items: center
+      font-size: 26px
+      &:hover
+        color: $Wght
+      svg
+        margin-right: 15px
+
+    .template-list__card
+      flex-basis: calc(25% - 9px)
+      .card-event__prev
+        margin-bottom: 22px
+      .card-event__title
+        margin-bottom: 27px
+      .card-event__description
+        display: none
+      .card-event__subtitle
+        color: $sale
+      &:not(:nth-of-type(4n))
+        margin-right: 9px
+  &--shops
+    .card-event__subtitle
+      display: flex
+      width: 100%
+      justify-content: space-between
+    .card-event__check-on-map
+      color: $sale
+      @include linkHover
+  &--map
+    position: relative
+    padding-top: 0
+    .container
+      height: 0
+      max-width: 1400px
+    .template-list__wrapper
+      padding-top: 90px
+      align-items: flex-end
+      justify-content: space-between
+      overflow: hidden
+      position: relative
+    .template-list__title
+      padding-top: 60px
+      position: relative
+      z-index: 998
+    .template-list__sidebar
+      z-index: 998
+  &--change-structure
+    .template-list__sidebar
+      margin-right: 0
+    .template-list__card:not(:nth-of-type(3n))
+      margin-right: 0
+    .template-list__card:not(:nth-of-type(2n))
+      margin-right: 0
+    .template-list--change-structure .template-list__card:not(:nth-of-type(2n))
+      margin-right: 0
+    .template-list__card
+      flex-basis: auto
+      max-width: 290px
+      width: 100%
+      margin-right: 0px
+      margin-left: 9px
+    .section-mobile__card:nth-of-type(2n)
+      margin-left: 0
+    .section-mobile__card
+      flex-basis: auto
+      max-width: calc(50% - 4px)
+      width: 100%
+      margin-right: 4px
+
+
+
+  //.map
+  //  .leaflet-labels-pane
+  //    pointer-events: auto!important
+  //    svg
+  //      path
+  //        cursor: pointer
+  //        opacity: 0
+  //        &:hover
+  //          opacity: 1
+@media (max-width: 1400px)
+  .template-list
+    &--map
+      .template-list__wrapper
+        padding-top: 45px
+      .filter-sidebar__list
+        max-height: 336px
+        height: 336px
+@media (max-width: 1199px)
+  .template-list
+    &__card
+      flex-basis: calc(50% - 10px)
+      &:not(:nth-of-type(2n))
+        margin-right: 10px
+
+@media (max-width: 999px)
+  .template-list
+    padding-top: 30px
+    &__mobile-content
+      display: block
+    &__wrapper
+      flex-direction: column
+    &__sidebar
+      margin-bottom: 31px
+      display: none
+    &__content-wrapper
+      display: none
+    &__pagination
+      display: none !important
+    &__title
+      font-size: 18px
+      margin-bottom: 15px
+    &--gallery
+      .template-list__content-wrapper
+        display: flex
+      .template-list__card
+        flex-basis: calc(50% - 9px)
+    &--shops
+      .template-list__content-wrapper
+        display: flex
+      .card-event__subtitle
+        flex-direction: column
+        align-items: self-start
+      .template-list__mobile-content
+        display: none
+    &--change-structure
+      .template-list__card
+        max-width: calc(50% - 10px)
+        width: 100%
+        margin-right: 0
+        margin-left: 7px
+    &--hidden-sidebar
+      .template-list__sidebar
+        display: none
+    &--map
+      padding-top: 0
+      .template-list__sidebar
+        z-index: 998
+        min-width: 0
+        background: none
+        display: block
+        margin-right: 0
+        margin-bottom: calc(100% - 260px)
+        height: max-content
+      .template-list__title
+        padding-top: 10px
+        margin-bottom: 0
+      .filter-sidebar__header
+        display: none
+        padding: 0
+      .filter-sidebar__list
+        display: none
+      .filter-sidebar__search
+        background-color: $Wght
+      .template-list__filter-floor
+        width: 100%
+        height: 200px
+        padding: 16px
+      .template-list__wrapper
+        height: calc(100vh - 240px)
+        overflow: initial
+    //&__section-mobile
+    //  margin-bottom: 31px
+

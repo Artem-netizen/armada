@@ -1,0 +1,40 @@
+.category
+  padding-top: 50px
+  padding-bottom: 150px
+  background-color: $base_day_black_4
+  &__wrapper
+    display: flex
+    flex-wrap: wrap
+  &__card
+    width: calc(33.333% - 9px)
+    margin-bottom: 22px
+    &:not(:nth-of-type(5n))
+      margin-right: 13px
+@media (max-width: 1199px)
+  .category
+    &__card
+      &:not(:nth-of-type(4n))
+        margin-right: 13px
+@media (max-width: 991px)
+  .category
+    &__card
+      width: calc(32.333% - 7px)
+      &:not(:nth-of-type(4n))
+        margin-right: 0
+      &:not(:nth-of-type(3n))
+        margin-right: 13px
+@media (max-width: 550px)
+  .category
+    &__card
+      width: calc(49.333% - 5px)
+      &:not(:nth-of-type(3n))
+        margin-right: 0
+      &:not(:nth-of-type(4n))
+        margin-right: 0
+      &:not(:nth-of-type(2n))
+        margin-right: 13px
+
+@media (max-width: 350px)
+  .category
+    &__card
+      margin-bottom: 14px
